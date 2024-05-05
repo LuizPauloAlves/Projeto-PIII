@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #bfbfbf;
+  font-size: 1rem;
+  color: 
+  #333333;
+}
+
+header{
+  height: 50px;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+}
+header nav{
+  height: 100%;
+  width: 100%;
+}
+
+header nav ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+header nav ul li{
+  display: inline;
+  font-size: 1.0rem;
+  color: rgb(32, 32, 32);
+}
+
+a{
+  text-decoration: none;
+  color: #333333;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+a:hover{
+  background-color: #aaa;
+}
+
+a:active{
+  background-color: #888;
+}
+
+li:first-child{
+  margin-right: 50px;
+}
+
+#titulo{
+  display: block;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+form{
+  display: block;
+  margin: auto;
+  width: 65%;
+}
+
+form label{
+  display: block;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  margin: 0.5rem;
+}
+
+label::before{
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  margin-right: 0.5rem;
+  background-image: url("/conteudos/setinha.svg");
+}
+
+.form__data{
+  display: block;
+  width: 20rem;
+  height: 2rem;
+  padding: 0rem 1rem;
+  margin-bottom: 1.5rem;
+  font-family: "Roboto", sans-serif;
+  border: 0;
+  border-radius: 0.25rem;
+}
+
+.form__bottom{
+  background-color: orange;
+  font-weight: 700;
+  border: none;
+  text-transform: uppercase
+}
+
+#enviar {
+  width: 5rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+/* serviços ativos */
+
+.icons__svg{
+  width: 1rem;
+  margin: 0 auto;
+}
+.alterar{
+  fill: rgb(32, 32, 32);
+} 
+.alterar:hover{
+  fill:orange;
+}
+.check {
+  fill: white;
+}
+.check:hover{
+  fill: greenyellow;
+}
+.deletar{
+  fill:#FC5624;
+}
+.deletar:hover{
+  fill: red;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr:first-child {
+  background-color: orange;
+}
+
+tr{
+  background-color: white;
+  border-bottom: 2px solid #333 ;
+}
+
+th {
+  padding: 0.5rem 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #523500;
+}
+
+th:first-child{
+  border-radius: 0.5rem 0 0 0;
+}
+
+th:last-child{
+  border-radius: 0 0.5rem  0 0;
+}
+
+td {
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+.btn{
+  border: none;
+}
+
+tr .btn{
+  background-color: white;
+}
+
+tr .check svg{
+  background-color: green;
+  padding: 0 2px;
+  border-radius: 0.2rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.mapas {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: 2rem auto;
+  border-radius: 0.25rem;
+  background-color: #333;
+}
+
+img{
+  display: block;
+  margin: 2rem auto;
+}

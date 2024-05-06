@@ -36,7 +36,7 @@ function createMarker(latitude, longitude) {
 async function verMarcadores() {
   const dados = await verDados();
   dados.forEach((element) => {
-    if (element.visitado != "true") { 
+    if (!element.visited) { 
       createMarker(element.latitude, element.longitude);
     }
   });

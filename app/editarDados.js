@@ -11,8 +11,8 @@ function modificarDados(){
       const linha = button.closest(".tabela__conteudo");
       const idLinha = linha.id;
       const conteudoIdLinha = linha.children[0].textContent;
-      const endereco = ""
-      const cep = ""
+      let endereco = ""
+      let cep = ""
       do{
         endereco = prompt (`Quer Deseja ${conteudoIdLinha} para o qual endereco: \n (Rua exemplo, 123, Piquete-Sp)`);
         cep = prompt (`Insira o CEP do novo endereço seguindo o seguinte formato: \n (Ex: 12620-000)`);

@@ -4,7 +4,7 @@ function initMap() {
   const configuracao = {
     center: { lat: -22.6112963189389, lng: -45.1773373236332 },
     zoom: 14,
-    mapTypeId: "roadmap", // Corrigido: mapTypeId com "d" minúsculo
+    mapTypeId: "roadmap",
     mapTypeControl: false,
     streetViewControl: false,
     styles: [
@@ -16,7 +16,7 @@ function initMap() {
   };
 
   map = new google.maps.Map(document.querySelector(".mapas"), configuracao);
-  verMarcadores(); // Chamar a função para exibir os marcadores
+  verMarcadores();
 }
 
 async function verDados() {
@@ -36,7 +36,7 @@ function createMarker(latitude, longitude) {
 async function verMarcadores() {
   const dados = await verDados();
   dados.forEach((element) => {
-    if (!element.visitado) { // Se element.visitado for false
+    if (element.visitado != "true") { 
       createMarker(element.latitude, element.longitude);
     }
   });

@@ -10,6 +10,7 @@ function enviadoComSucesso(mensagem){
       background-color: #ccc;
       font-size: 1rem;
       font-weight: 700;
+      font-family: "Poppins", sans-serif;
       top: 25%;
       left: 50%;
       padding: 1.5rem;
@@ -25,6 +26,7 @@ function enviadoComSucesso(mensagem){
       height: 2rem;
       width: 3rem;
       border: none;
+      font-family: "Poppins", sans-serif;
       background-color: orange;
       border-radius: 0.25rem;
       padding:0.25 rem;

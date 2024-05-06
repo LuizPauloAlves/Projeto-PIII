@@ -104,6 +104,15 @@ label::before{
   text-transform: uppercase
 }
 
+.form__bottom:hover {
+  background-color: rgb(233, 157, 17);
+}
+
+.form__bottom:active {
+  background-color: rgb(255, 193, 77);
+}
+
+
 #enviar {
   width: 5rem;
   height: 2rem;

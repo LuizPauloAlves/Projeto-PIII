@@ -11,8 +11,10 @@ function modificarDados(){
       const linha = button.closest(".tabela__conteudo");
       const idLinha = linha.id;
       const conteudoIdLinha = linha.children[0].textContent;
-      const endereco = prompt (`Quer alterar ${conteudoIdLinha} para o qual endereco \n (Rua exemplo, 123, Piquete-Sp):`);
-      const cep = prompt (`Qual vai ser o CEP (Ex: 12620-000):`);
+      do{
+        const endereco = prompt (`Quer Deseja ${conteudoIdLinha} para o qual endereco: \n (Rua exemplo, 123, Piquete-Sp)`);
+        const cep = prompt (`Insira o CEP do novo endereço seguindo o seguinte formato: \n (Ex: 12620-000)`);
+      }while(!endereco || !cep)
       atualizarDados(idLinha, endereco, cep);
     });
   });
@@ -56,8 +58,8 @@ function alertaMensagem(mensagem) {
     const alert = document.createElement("div");
     const alertYES = document.createElement("button");
     const alertNO = document.createElement("button");
-    alertYES.innerText = "YES";
-    alertNO.innerText = "NO";
+    alertYES.innerText = "SIM";
+    alertNO.innerText = "NÃO";
     alert.appendChild(alertYES);
     alert.appendChild(alertNO);
     alert.classList.add("alert");
@@ -65,6 +67,7 @@ function alertaMensagem(mensagem) {
     `position: fixed;
     width: 37.5%;
     background-color: #ddd;
+    font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: 700;
     top: 25%;
@@ -84,6 +87,7 @@ function alertaMensagem(mensagem) {
     height: 2rem;
     width: 3rem;
     border: none;
+    font-family: "Poppins", sans-serif;
     background-color: orange;
     border-radius: 0.25rem;
     padding: 0.25rem;
@@ -95,6 +99,7 @@ function alertaMensagem(mensagem) {
     height: 2rem;
     width: 3rem;
     border: none;
+    font-family: "Poppins", sans-serif;
     display: block;
     margin: 1rem auto;
     background-color: orange;
